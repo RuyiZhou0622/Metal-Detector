@@ -114,6 +114,7 @@ long int GetPeriod (int n)
 
 // Information here:
 // http://umassamherstm5.org/tech-tutorials/pic32-tutorials/pic32mx220-tutorials/1-basic-digital-io-220
+
 void main(void)
 {
 	long int count;
@@ -127,7 +128,7 @@ void main(void)
     TRISB |= (1<<5);   // configure pin RB5 as input
     CNPUB |= (1<<5);   // Enable pull-up resistor for RB5
      
-    xianglaba();
+    horn();
      
 	waitms(500);
 	printf("Period measurement using the core timer free running counter.\r\n"
@@ -182,7 +183,7 @@ void SetupTimer1 (void)
 	__builtin_enable_interrupts();
 }
 
-void xianglaba (void)
+void horn (void)
 {
 	volatile unsigned long t=0;
 	
