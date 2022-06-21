@@ -18,7 +18,7 @@ pin14 is connected to a metal detector which is consist of a NOT gate and a capa
 NOT gate is consist of a N-type MOSFET and a P-type MOSFET. Pin15 on Pic32 is connected to a speaker.
 
 
-Softwire:
+Software:
 
 The main code is the provided 'Period.c'. This code will generate the frequency of Pin 14 (the detector).First,
 I use:
@@ -44,7 +44,7 @@ inductence will be slightly changed. It is reflected as a change in the oscillat
 
 Extra feature:
 
-I combined the alert light with speaker. So if a metal is closing the alert light will bright to indicate the close
+I combined the alert light with speaker. If a metal is closing the alert light will bright to indicate the close
 of metal.
 
 
